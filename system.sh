@@ -124,7 +124,7 @@ build-essential libtool autotools-dev automake pkg-config libevent-dev bsdmainut
 
 
 echo -e "$GREEN Done...$COL_RESET"
-echo -e " Downloading CryptoPool.builders YiiMP Repo...$COL_RESET"
+echo -e " Downloading bunbunbunbunbunny YiiMP Repo...$COL_RESET"
 hide_output sudo git clone ${YiiMPRepo} $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
 if [[ ("$CoinPort" == "Yes") ]]; then
 	cd $STORAGE_ROOT/yiimp/yiimp_setup/yiimp
