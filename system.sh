@@ -14,7 +14,7 @@ fi
 # Set timezone
 echo -e " Setting TimeZone to UTC...$COL_RESET"
 if [ ! -f /etc/timezone ]; then
-echo "Setting timezone to UTC."
+echo "Setting Bunbunbunny timezone to UTC."
 echo "Etc/UTC" > sudo /etc/timezone
 restart_service rsyslog
 fi
