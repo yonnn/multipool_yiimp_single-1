@@ -79,14 +79,14 @@ fi
 fi
 
 if [ -z "${StratumURL}" ]; then
-DEFAULT_StratumURL=stratum.${DomainName}
+DEFAULT_StratumURL=${DomainName}
 input_box "Stratum URL" \
 "Enter your stratum URL. It is recommended to use another subdomain such as stratum.${DomainName}
 \n\nDo not add www. to the domain name.
 \n\nIf only using the server IP, enter the IP only!
 \n\nStratum URL:" \
 ${DEFAULT_StratumURL} \
-StratumURL
+
 
 if [ -z "${StratumURL}" ]; then
 # user hit ESC/cancel
