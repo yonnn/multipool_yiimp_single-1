@@ -21,7 +21,7 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 #####################################################
-# Updated by cryptopool.builders for crypto use...
+# Updated by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 
 [ -f /etc/motd.tail ] && cat /etc/motd.tail || true

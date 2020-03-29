@@ -1,11 +1,11 @@
 #####################################################
 # Source code https://github.com/end222/pacmenu
-# Updated by cryptopool.builders for crypto use...
+# Updated by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 
 source /etc/functions.sh
 
-RESULT=$(dialog --stdout --default-item 1 --title "Ultimate bunbunbunbunbunny Setup Installer v1.37" --menu "Choose one" -1 60 5 \
+RESULT=$(dialog --stdout --default-item 1 --title "Ultimate gnark-mining Setup Installer v1.37" --menu "Choose one" -1 60 5 \
 ' ' "- For small private pools -" \
 1 "YiiMP - Single Server" \
 ' ' "- If you plan on adding more servers later -" \

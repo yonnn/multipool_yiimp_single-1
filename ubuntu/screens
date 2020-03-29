@@ -1,6 +1,6 @@
 #####################################################
 # Source code from https://codereview.stackexchange.com/questions/55077/small-bash-script-to-start-and-stop-named-services
-# Updated by cryptopool.builders for crypto use...
+# Updated by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 
 source /etc/multipool.conf

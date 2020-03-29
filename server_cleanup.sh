@@ -1,5 +1,5 @@
 #####################################################
-# Created by cryptopool.builders for crypto use...
+# Created by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 
 source /etc/functions.sh
@@ -28,7 +28,7 @@ else
 source $STORAGE_ROOT/yiimp/first_boot.sh
 fi
 ################################################################################
-# Author: cryptopool.builders
+# Author: cryptopool.builders-OLD-VERSION
 #
 #
 # Program: yiimp screen startup script
@@ -51,7 +51,7 @@ echo -e " Creating Stratum screens start script...$COL_RESET"
 
 echo '#!/usr/bin/env bash
 ################################################################################
-# Author: cryptopool.builders
+# Author: cryptopool.builders-OLD-VERSION
 #
 #
 # Program: yiimp stratum startup script

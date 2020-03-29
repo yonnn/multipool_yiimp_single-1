@@ -2,7 +2,7 @@
 
 
 #####################################################
-# Created by cryptopool.builders for crypto use...
+# Created by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 # Needs to be ran after the first reboot of the system after permissions are set
 #####################################################

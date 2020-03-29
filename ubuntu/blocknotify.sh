@@ -1,5 +1,5 @@
 #####################################################
-# Created by cryptopool.builders for crypto use...
+# Created by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 #!/bin/bash
 blocknotify stratum_one:$1 $2 $3

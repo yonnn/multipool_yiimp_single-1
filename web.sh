@@ -2,7 +2,7 @@
 
 #####################################################
 # Source https://mailinabox.email/ https://github.com/mail-in-a-box/mailinabox
-# Updated by cryptopool.builders for crypto use...
+# Updated by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################
 
 source /etc/functions.sh
@@ -620,7 +620,7 @@ define('"'"'YAAMP_USE_NICEHASH_API'"'"', false);
 define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'12Pt3vQhQpXvyzBd5qcoL17ouhNFyihyz5'"'"');
 define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${DomainName}"''"'"');
 define('"'"'YAAMP_STRATUM_URL'"'"', '"'"''"${StratumURL}"''"'"'); // change if your stratum server is on a different host
-define('"'"'YAAMP_SITE_NAME'"'"', '"'"'CryptoPool.Builders'"'"');
+define('"'"'YAAMP_SITE_NAME'"'"', '"'"'CryptoPool.Builders.OLD.VERSION'"'"');
 define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"${SupportEmail}"''"'"');
 define('"'"'YAAMP_ADMIN_IP'"'"', '"'"''"${PublicIP}"''"'"'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
 define('"'"'YAAMP_ADMIN_WEBCONSOLE'"'"', true);
@@ -704,7 +704,7 @@ else
 	define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'12Pt3vQhQpXvyzBd5qcoL17ouhNFyihyz5'"'"');
 	define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${DomainName}"''"'"');
 	define('"'"'YAAMP_STRATUM_URL'"'"', '"'"''"${StratumURL}"''"'"'); // change if your stratum server is on a different host
-	define('"'"'YAAMP_SITE_NAME'"'"', '"'"'CryptoPool.Builders'"'"');
+	define('"'"'YAAMP_SITE_NAME'"'"', '"'"'CryptoPool.Builders.OLD.VERSION'"'"');
 	define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"${SupportEmail}"''"'"');
 	define('"'"'YAAMP_ADMIN_IP'"'"', '"'"''"${PublicIP}"''"'"'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
 	define('"'"'YAAMP_ADMIN_WEBCONSOLE'"'"', true);
@@ -775,8 +775,8 @@ sudo chmod g+w $STORAGE_ROOT -R
 
 cd $HOME/multipool/yiimp_single
 
-#Updating YiiMP files for cryptopool.builders build
-echo -e " Adding the cryptopool.builders flare to YiiMP...$COL_RESET"
+#Updating YiiMP files for cryptopool.builders-OLD-VERSION build
+echo -e " Adding the cryptopool.builders-OLD-VERSION flare to YiiMP...$COL_RESET"
 
 sudo sed -i 's/YII MINING POOLS/'${DomainName}' Mining Pool/g' $STORAGE_ROOT/yiimp/site/web/yaamp/modules/site/index.php
 sudo sed -i 's/domain/'${DomainName}'/g' $STORAGE_ROOT/yiimp/site/web/yaamp/modules/site/index.php
