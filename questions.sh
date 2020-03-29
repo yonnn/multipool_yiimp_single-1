@@ -86,7 +86,7 @@ input_box "Stratum URL" \
 \n\nIf only using the server IP, enter the IP only!
 \n\nStratum URL:" \
 ${DEFAULT_StratumURL} \
-
+StratumURL
 
 if [ -z "${StratumURL}" ]; then
 # user hit ESC/cancel
