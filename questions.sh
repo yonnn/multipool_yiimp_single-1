@@ -94,19 +94,19 @@ exit
 fi
 fi
 
-if [ -z "${SupportEmail}" ]; then
+/* if [ -z "${SupportEmail}" ]; then
 DEFAULT_SupportEmail=support@${DomainName}
 input_box "System Email" \
 "Enter an email address for the system to send alerts and other important messages.
 \n\nSystem Email:" \
 ${DEFAULT_SupportEmail} \
-SupportEmail
+SupportEmail 
 
 if [ -z "${SupportEmail}" ]; then
 # user hit ESC/cancel
 exit
 fi
-fi
+fi */
 
 if [ -z "${PublicIP}" ]; then
 DEFAULT_PublicIP=$(echo $SSH_CLIENT | awk '{ print $1}')
