@@ -94,7 +94,6 @@ exit
 fi
 fi
 
-
 if [ -z "${PublicIP}" ]; then
 DEFAULT_PublicIP=$(echo $SSH_CLIENT | awk '{ print $1}')
 input_box "Your Public IP" \
@@ -182,7 +181,6 @@ Using Sub-Domain : ${UsingSubDomain}
 Install SSL      : ${InstallSSL}
 Domain Name      : ${DomainName}
 Stratum URL      : ${StratumURL}
-System Email     : ${SupportEmail}
 Your Public IP   : ${PublicIP}
 Admin Location   : ${AdminPanel}" 15 60
 
@@ -202,7 +200,6 @@ echo 'STORAGE_USER='"${STORAGE_USER}"'
 STORAGE_ROOT='"${STORAGE_ROOT}"'
 DomainName='"${DomainName}"'
 StratumURL='"${StratumURL}"'
-SupportEmail='"${SupportEmail}"'
 PublicIP='"${PublicIP}"'
 DBRootPassword='"'"''"${DBRootPassword}"''"'"'
 AdminPanel='"${AdminPanel}"'
@@ -221,7 +218,6 @@ echo 'STORAGE_USER='"${STORAGE_USER}"'
   STORAGE_ROOT='"${STORAGE_ROOT}"'
   DomainName='"${DomainName}"'
   StratumURL='"${StratumURL}"'
-  SupportEmail='"${SupportEmail}"'
   PublicIP='"${PublicIP}"'
   DBRootPassword='"'"''"${DBRootPassword}"''"'"'
   AdminPanel='"${AdminPanel}"'
