@@ -155,7 +155,7 @@ restart_service php7.2-fpm
 if [[ ("$InstallSSL" == "y" || "$InstallSSL" == "Y" || "$InstallSSL" == "yes" || "$InstallSSL" == "Yes" || "$InstallSSL" == "YES") ]]; then
 echo -e " Installing LetsEncrypt and setting up SSL...$COL_RESET"
 apt_install letsencrypt
-hide_output sudo letsencrypt certonly -a webroot --webroot-path=${STORAGE_ROOT}/yiimp/site/web --email "${SupportEmail}" --agree-tos -d "${DomainName}"
+hide_output sudo letsencrypt certonly -a webroot --webroot-path=${STORAGE_ROOT}/yiimp/site/web --email "youremail@gmail.com" --agree-tos -d "${DomainName}"
 sudo rm /etc/nginx/sites-available/${DomainName}.conf
 echo
 echo -e " Generating DHPARAM, this may take awhile...$COL_RESET"
@@ -419,7 +419,7 @@ restart_service php7.2-fpm
 if [[ ("$InstallSSL" == "y" || "$InstallSSL" == "Y" || "$InstallSSL" == "yes" || "$InstallSSL" == "Yes" || "$InstallSSL" == "YES") ]]; then
 echo -e " Installing LetsEncrypt and setting up SSL...$COL_RESET"
 apt_install letsencrypt
-hide_output sudo letsencrypt certonly -a webroot --webroot-path=${STORAGE_ROOT}/yiimp/site/web --email "${SupportEmail}" --agree-tos -d "${DomainName}" -d www."${DomainName}"
+hide_output sudo letsencrypt certonly -a webroot --webroot-path=${STORAGE_ROOT}/yiimp/site/web --email "youremail@gmail.com" --agree-tos -d "${DomainName}" -d www."${DomainName}"
 sudo rm /etc/nginx/sites-available/${DomainName}.conf
 echo -e " Generating DHPARAM, this may take awhile...$COL_RESET"
 hide_output sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
@@ -621,7 +621,7 @@ define('"'"'YAAMP_BTCADDRESS'"'"', '"'"'12Pt3vQhQpXvyzBd5qcoL17ouhNFyihyz5'"'"')
 define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${DomainName}"''"'"');
 define('"'"'YAAMP_STRATUM_URL'"'"', '"'"''"${StratumURL}"''"'"'); // change if your stratum server is on a different host
 define('"'"'YAAMP_SITE_NAME'"'"', '"'"'CryptoPool.Builders.OLD.VERSION'"'"');
-define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"${SupportEmail}"''"'"');
+define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"youremail@gmail.com"''"'"');
 define('"'"'YAAMP_ADMIN_IP'"'"', '"'"''"${PublicIP}"''"'"'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
 define('"'"'YAAMP_ADMIN_WEBCONSOLE'"'"', true);
 define('"'"'YAAMP_CREATE_NEW_COINS'"'"', false);
@@ -705,7 +705,7 @@ else
 	define('"'"'YAAMP_SITE_URL'"'"', '"'"''"${DomainName}"''"'"');
 	define('"'"'YAAMP_STRATUM_URL'"'"', '"'"''"${StratumURL}"''"'"'); // change if your stratum server is on a different host
 	define('"'"'YAAMP_SITE_NAME'"'"', '"'"'CryptoPool.Builders.OLD.VERSION'"'"');
-	define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"${SupportEmail}"''"'"');
+	define('"'"'YAAMP_ADMIN_EMAIL'"'"', '"'"''"youremail@gmail.com"''"'"');
 	define('"'"'YAAMP_ADMIN_IP'"'"', '"'"''"${PublicIP}"''"'"'); // samples: "80.236.118.26,90.234.221.11" or "10.0.0.1/8"
 	define('"'"'YAAMP_ADMIN_WEBCONSOLE'"'"', true);
 	define('"'"'YAAMP_CREATE_NEW_COINS'"'"', false);
