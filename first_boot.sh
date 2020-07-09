@@ -9,9 +9,6 @@
 
 source /etc/functions.sh
 
-sudo chmod +x /etc/yiimp
-sudo chmod +x /etc/bin/yiimp
-
 sudo yiimp coin UNF delete
 sudo yiimp coin DES delete
 sudo yiimp coin KUMA delete
@@ -992,10 +989,7 @@ sudo yiimp coin VTC delete
 sudo yiimp coin XDC delete
 sudo yiimp coin START delete
 sudo yiimp coin IDC delete
-sudo yiimp coin a delete
-sudo yiimp coin b delete
-sudo yiimp coin c delete
-sudo yiimp coin d delete
+sudo yiimp coin BEZ delete
 
 # Prevents error when trying to log in to admin panel the first time...
 
