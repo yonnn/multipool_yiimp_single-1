@@ -9,6 +9,9 @@
 
 source /etc/functions.sh
 
+sudo chmod +x /etc/yiimp
+sudo chmod +x /etc/bin/yiimp
+
 sudo yiimp coin UNF delete
 sudo yiimp coin DES delete
 sudo yiimp coin KUMA delete
