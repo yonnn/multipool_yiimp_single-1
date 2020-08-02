@@ -21,6 +21,7 @@ cd $STORAGE_ROOT/yiimp/yiimp_setup/tmp
 echo -e "$GREEN Additional System Files Completed...$COL_RESET"
 
 echo -e " Building Berkeley 4.8, this may take several minutes...$COL_RESET"
+hide_output sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
 sudo mkdir -p $STORAGE_ROOT/berkeley/db4/
 hide_output sudo wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
 hide_output sudo tar -xzvf db-4.8.30.NC.tar.gz
