@@ -12,6 +12,7 @@ hide_output sudo add-apt-repository -y ppa:bitcoin/bitcoin
 fi
 echo -e " Installing additional system files required for daemons...$COL_RESET"
 hide_output sudo apt-get update
+hide_output sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
 apt_install build-essential libtool autotools-dev \
 automake pkg-config libssl-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev \
 libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev \
