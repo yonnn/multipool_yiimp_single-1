@@ -3,6 +3,7 @@
 #####################################################
 
 source /etc/functions.sh
+source /etc/multipool.conf 
 source $STORAGE_ROOT/yiimp/.yiimp.conf
 
 echo -e " Installing BitCoin PPA...$COL_RESET"
@@ -11,10 +12,11 @@ hide_output sudo add-apt-repository -y ppa:bitcoin/bitcoin
 fi
 echo -e " Installing additional system files required for daemons...$COL_RESET"
 hide_output sudo apt-get update
+hide_output sudo apt-get install -y libdb4.8-dev libdb4.8++-dev
 apt_install build-essential libtool autotools-dev \
 automake pkg-config libssl-dev libevent-dev bsdmainutils git libboost-all-dev libminiupnpc-dev \
 libqt5gui5 libqt5core5a libqt5webkit5-dev libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev \
-protobuf-compiler libqrencode-dev libzmq3-dev
+protobuf-compiler libqrencode-dev libzmq3-dev libgmp-dev
 
 sudo mkdir -p $STORAGE_ROOT/yiimp/yiimp_setup/tmp
 cd $STORAGE_ROOT/yiimp/yiimp_setup/tmp
@@ -33,7 +35,7 @@ echo -e "$GREEN Berkeley 4.8 Completed...$COL_RESET"
 
 echo -e " Building Berkeley 5.3, this may take several minutes...$COL_RESET"
 sudo mkdir -p $STORAGE_ROOT/berkeley/db5/
-hide_output sudo wget 'http://download.oracle.com/berkeley-db/db-5.3.28.tar.gz'
+hide_output sudo wget 'http://anduin.linuxfromscratch.org/BLFS/bdb/db-5.3.28.tar.gz'
 hide_output sudo tar -xzvf db-5.3.28.tar.gz
 cd db-5.3.28/build_unix/
 hide_output sudo ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$STORAGE_ROOT/berkeley/db5/

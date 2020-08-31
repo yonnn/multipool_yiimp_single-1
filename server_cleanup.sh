@@ -1,3 +1,5 @@
+#!/usr/bin/env bash 
+
 #####################################################
 # Created by cryptopool.builders-OLD-VERSION for crypto use...
 #####################################################

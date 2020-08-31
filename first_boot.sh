@@ -990,6 +990,10 @@ sudo yiimp coin XDC delete
 sudo yiimp coin START delete
 sudo yiimp coin IDC delete
 sudo yiimp coin BEZ delete
+sudo yiimp coin a delete
+sudo yiimp coin b delete
+sudo yiimp coin c delete
+sudo yiimp coin d delete
 
 # Prevents error when trying to log in to admin panel the first time...
 
