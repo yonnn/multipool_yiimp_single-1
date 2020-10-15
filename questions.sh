@@ -211,7 +211,7 @@ CoinPort='"${CoinPort}"'
 AutoExchange='"${AutoExchange}"'
 DBInternalIP='"${DBInternalIP}"'
 # Unless you do some serious modifications this installer will not work with any other repo of yiimp!
-YiiMPRepo='https://github.com/Original-Tasty/yiimp.git'
+YiiMPRepo='https://github.com/yonnn/yiimp-4.git'
 ' | sudo -E tee $STORAGE_ROOT/yiimp/.yiimp.conf >/dev/null 2>&1
 else
 echo 'STORAGE_USER='"${STORAGE_USER}"'
